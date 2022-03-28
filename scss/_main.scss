@@ -1,0 +1,82 @@
+
+.wrapper{
+  @include flexBox (column, center, flex-start);
+  height:100%;
+  width:100%;
+  background-image: $gradient;
+}
+
+
+#calc-container{
+  @include flexBox (column, center, space-around);
+  @include borderRadius;
+  padding: 20px;
+  margin:70px 40px 100px 40px;
+  height: auto;
+  width:390px;
+}
+#inputcontainer{
+  @include flexBox (column, center, space-around);
+  height: auto;
+  width:100%;
+}
+#inputbox{
+  @include flexBox (column, flex-start, flex-start);
+  @include wrap;
+  color: rgb(70, 70, 70);
+  min-height: 150px;
+  height: 100%;
+  width:100%;
+  border-radius: 10px;
+  border:none;
+  padding: 20px;
+  resize: none;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  font-size: 30px;
+}
+#all-buttons-container{
+  @include flexBox (row, center, center);
+  margin-top:20px;
+  height: 400px;
+  width: 350px;
+}
+#buttons-container-1{
+  height: 100%;
+  width:70%;
+  @include flexBox (row, center, space-around);
+  @include wrap;
+}
+#buttons-container-2{
+  @include flexBox (column, center, space-around);
+  @include wrap;
+  height: 100%;
+  width:25%;
+}
+button{
+  @include borderRadius;
+  border:2px solid white;
+  height:70px;
+  width:70px;
+  color: $color-white;
+  transition:0.1s all ease-in;
+  font-size: 40px;
+  background: none;
+  &:hover{
+    color:rgb(70, 70, 70);
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  &:active{
+    color: white;
+  }
+}
+
+#equalsbutton{
+  flex:0.8;
+}
+#zerobutton{
+  width:61%;
+}
+

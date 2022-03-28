@@ -1,0 +1,65 @@
+//TABLETS
+@media screen and (min-width: 600px){
+  #calc-container{
+    height: auto;
+    width:600px;
+  }
+  #inputcontainer{
+    height: auto;
+    min-height: 100px;
+    width:100%;
+  }
+  #all-buttons-container{
+    height: 610px;
+    width: 550px;
+  }
+  button{
+    height:110px;
+    width:110px;
+    font-size: 40px;
+  }
+  #equalsbutton{
+    flex:0.8;
+  }
+  #zerobutton{
+    width:61%;
+  }
+
+}
+
+//DESKTOPS
+@media screen and (min-width:992px){
+  .wrapper{
+    @include flexBox (column, center, center);
+    height:100%;
+    width:100%;
+    background-image: $gradient;
+  }
+  #calc-container{ 
+    height: 530px;
+    width:330px;
+  }
+  #inputcontainer{
+    height: 90px;
+    width:100%;
+  }
+  #inputbox{
+    font-size: 25px;
+  }
+  #all-buttons-container{
+    height: 320px;
+    width: 100%;
+  }
+  button{
+    height:60px;
+    width:60px;
+    font-size: 20px;
+  }
+  #equalsbutton{
+    flex:0.8;
+  }
+  #zerobutton{
+    width:61%;
+  }
+
+}

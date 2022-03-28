@@ -1,0 +1,18 @@
+@mixin flexBox($direction, $align, $content) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $content;
+}
+
+@mixin borderRadius{
+  border-radius: 10px;
+}
+
+@mixin border{
+  border:white solid 3px;
+}
+
+@mixin wrap{
+  flex-wrap: wrap;
+}
